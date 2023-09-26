@@ -19,7 +19,7 @@ namespace IdentityLayer
 
         public string Contacto { get; set; }
 
-        public int IdBarrio { get; set; }
+        public string IdBarrio { get; set; }
 
 		public string Telefono { get; set; }
 
@@ -28,5 +28,7 @@ namespace IdentityLayer
 		public string IdTransaccion { get; set; }
 
 		public string FechaTexto { get; set; }
-	}
+
+        public List<SaleDetail> DetalleVenta { get; set; }
+    }
 }
