@@ -1,0 +1,6 @@
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\IdentityLayer\bin\Debug\IdentityLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\IdentityLayer\bin\Debug\IdentityLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\IdentityLayer\obj\Debug\IdentityLayer.csproj.AssemblyReference.cache
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\IdentityLayer\obj\Debug\IdentityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\IdentityLayer\obj\Debug\IdentityLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\IdentityLayer\obj\Debug\IdentityLayer.pdb

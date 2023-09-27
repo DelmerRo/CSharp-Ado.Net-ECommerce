@@ -1,0 +1,11 @@
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\bin\Debug\DataLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\bin\Debug\IdentityLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\bin\Debug\IdentityLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\BusinessLayer\obj\Debug\BusinessLayer.pdb

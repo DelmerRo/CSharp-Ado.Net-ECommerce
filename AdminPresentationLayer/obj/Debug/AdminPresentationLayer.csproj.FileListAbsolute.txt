@@ -77,3 +77,9 @@ C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\Admi
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.csproj.CopyComplete
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.dll
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\BusinessLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\IdentityLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\BusinessLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\IdentityLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\DataLayer.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\DataLayer.pdb
