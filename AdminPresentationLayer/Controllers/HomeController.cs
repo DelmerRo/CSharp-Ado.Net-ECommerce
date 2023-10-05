@@ -21,11 +21,13 @@ namespace AdminPresentationLayer.Controllers
             return View();
         }
 
+
+        [HttpGet]
         public JsonResult ListUsers()
         {
-            List<User> list = new List<User>();
+            _ = new List<User>();
 
-            list = new CN_Users().List();
+            List<User> list = new CN_Users().List();
 
             return Json(list, JsonRequestBehavior.AllowGet);
         }

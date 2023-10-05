@@ -4,5 +4,57 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Users</h2>
+<ol class="breadcrumb mb-4 mt-4" >
+    <li class="breadcrumb-item"><a href="index.html">Summary</a></li>
+    <li class="breadcrumb-item active">Users</li>
+</ol>
 
+<div class="card">
+    <div class="card-header">
+
+        <i class="fas fa-users me-1"></i>List of Users
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-success">Create New</button>
+            </div>
+
+            <hr />
+
+            <table id="table_users" class="display cell-border" style="width: 100%">
+               <thead>
+                   <tr>
+                       <th>Nombre</th>
+                       <th>Apellidos</th>
+                       <th>Correo</th>
+                       <th>Activo</th>
+                   </tr>
+               </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+
+        jQuery.ajax({
+            url: '@Url.Action("ListUsers", "Home")',
+            type: "GET",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                debugger;
+                var texto1 = "Hola soy el texto 1"
+                
+                   console.log(data)
+            }
+        })
+
+    </script>
+
+    }
