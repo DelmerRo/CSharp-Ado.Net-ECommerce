@@ -20,8 +20,10 @@ namespace DataLayer
                     
                     string query = "select IdUsuario, Nombres, Apellidos, Correo, Clave, Reestablecer, Activo from USUARIO";
 
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.CommandType = CommandType.Text;
+                    SqlCommand cmd = new SqlCommand(query, connection)
+                    {
+                        CommandType = CommandType.Text
+                    };
 
                     connection.Open();
 
