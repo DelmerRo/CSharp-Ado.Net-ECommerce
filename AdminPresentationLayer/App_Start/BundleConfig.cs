@@ -13,6 +13,8 @@ namespace AdminPresentationLayer
 
             bundles.Add(new Bundle("~/bundles/complements").Include(
             "~/Scripts/fontawesome/all.min.js",
+            "~/Scripts/DataTables/jquery.dataTables.js", // Para que muestre  de una forma dinamica la informacion en tablas
+            "~/Scripts/DataTables/dataTables.responsive.js", //Se ajusta a una pantalla mobile
             "~/Scripts/scripts.js"));
 
             //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -27,7 +29,10 @@ namespace AdminPresentationLayer
                       "~/Scripts/bootstrap.bundle.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/site.css"));
+                "~/Content/site.css",
+                "~/Content/DataTables/css/jquery.dataTables.css",
+                "~/Content/DataTables/css/responsive.dataTables.css"
+                ));
         }
     }
 }

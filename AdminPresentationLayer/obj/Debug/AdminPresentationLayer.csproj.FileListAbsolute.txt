@@ -83,3 +83,4 @@ C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\Admi
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\IdentityLayer.pdb
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\DataLayer.dll
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\DataLayer.pdb
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\es\System.Web.Optimization.resources.dll

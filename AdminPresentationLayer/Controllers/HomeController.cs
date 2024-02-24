@@ -25,11 +25,9 @@ namespace AdminPresentationLayer.Controllers
         [HttpGet]
         public JsonResult ListUsers()
         {
-            _ = new List<User>();
+          List<User> list = new CN_Users().List();
 
-            List<User> list = new CN_Users().List();
-
-            return Json(list, JsonRequestBehavior.AllowGet);
+            return Json(new { data =  list }, JsonRequestBehavior.AllowGet);
         }
     }
 }
