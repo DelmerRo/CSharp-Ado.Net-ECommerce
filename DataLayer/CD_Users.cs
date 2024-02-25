@@ -4,20 +4,22 @@ using System.Data.SqlClient;
 
 using System.Data;
 using IdentityLayer;
-   
+
 
 namespace DataLayer
 {
     public class CD_Users
     {
-        public List<User> List() {
+        public List<User> List()
+        {
 
             List<User> list = new List<User>();
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(Connection.cn)){
-                    
+                using (SqlConnection connection = new SqlConnection(Connection.cn))
+                {
+
                     string query = "select IdUsuario, Nombres, Apellidos, Correo, Clave, Reestablecer, Activo from USUARIO";
 
                     SqlCommand cmd = new SqlCommand(query, connection)
@@ -28,7 +30,8 @@ namespace DataLayer
                     connection.Open();
 
 
-                    using (SqlDataReader dr = cmd.ExecuteReader() ){
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
                         while (dr.Read())
                         {
                             list.Add(

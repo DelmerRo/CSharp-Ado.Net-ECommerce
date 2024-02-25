@@ -16,18 +16,7 @@ namespace AdminPresentationLayer.Controllers
             return View();
         }
 
-        public ActionResult Users()
-        {
-            return View();
-        }
+   
 
-
-        [HttpGet]
-        public JsonResult ListUsers()
-        {
-          List<User> list = new CN_Users().List();
-
-            return Json(new { data =  list }, JsonRequestBehavior.AllowGet);
-        }
     }
 }

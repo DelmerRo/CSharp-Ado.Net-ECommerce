@@ -1,17 +1,17 @@
 ﻿
 @{
-    ViewBag.Title = "Users";
+    ViewBag.Title = "Categories";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <ol class="breadcrumb mb-4 mt-4">
     <li class="breadcrumb-item"><a href="index.html">Summary</a></li>
-    <li class="breadcrumb-item active">Users</li>
+    <li class="breadcrumb-item active">Categories</li>
 </ol>
 
 <div class="card">
     <div class="card-header">
-        <i class="fas fa-users me-1"></i>List of Users
+        <i class="fas fa-list me-1"></i>List of Categories
     </div>
 
     <div class="card-body">
@@ -22,12 +22,11 @@
         </div>
         <hr />
 
-        <table id="User_Table" class="display cell-border" style="width: 100%">
+        <table id="Category_Table" class="display cell-border" style="width: 100%">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Correo</th>
+                    <th>IdCategoria</th>
+                    <th>Descripcion</th>
                     <th>Activo</th>
                     <th></th>
                 </tr>
@@ -44,7 +43,7 @@
         var dataTable;
 
         jQuery.ajax({
-            url: '@Url.Action("ListUsers", "User")',
+            url: '@Url.Action("ListCategories", "Category")',
             type: "GET",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
@@ -53,18 +52,17 @@
             }
         })
 
-        dataTable = $("#User_Table").DataTable({
+        dataTable = $("#Category_Table").DataTable({
             responsive: true,
             ordering: false,
             "ajax": {
-                url: '@Url.Action("ListUsers", "User")',
+                url: '@Url.Action("ListCategories", "Category")',
                 type: "GET",
                 dataType: "json"
             },
             "columns": [
-                { "data": "Nombres" },
-                { "data": "Apellidos" },
-                { "data": "Correo" },
+                { "data": "IdCategoria" },
+                { "data": "Descripcion" },
                 {
                     "data": "Activo", "render": function (value) {
                         var res = '<span class="badge bg-danger">No</span>';
@@ -87,3 +85,4 @@
     </script>
 
 }
+
