@@ -16,7 +16,7 @@ namespace AdminPresentationLayer.Controllers
         }
 
         [HttpGet]
-        public JsonResult ListBrand()
+        public JsonResult ListBrands()
         {
             List<Brand> list = new CN_Brands().List();
 

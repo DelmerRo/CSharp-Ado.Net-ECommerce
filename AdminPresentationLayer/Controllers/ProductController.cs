@@ -17,7 +17,7 @@ namespace AdminPresentationLayer.Controllers
         }
 
         [HttpGet]
-        public JsonResult ListProduct() {
+        public JsonResult ListProducts() {
             List<Product> list = new CN_Product().List();
             return Json(new { data = list }, JsonRequestBehavior.AllowGet);
         }

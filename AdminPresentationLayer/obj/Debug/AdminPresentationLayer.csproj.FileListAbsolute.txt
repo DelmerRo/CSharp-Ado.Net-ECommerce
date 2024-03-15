@@ -74,7 +74,6 @@ C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\Admi
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.csproj.AssemblyReference.cache
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.csproj.CoreCompileInputs.cache
-C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.csproj.CopyComplete
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.dll
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPresentationLayer.pdb
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\BusinessLayer.dll
@@ -84,3 +83,4 @@ C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\Admi
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\DataLayer.dll
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\DataLayer.pdb
 C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Jindrg\workspace\Ecommerce - Angelito\Sistema Web Carrito\CursoMVC\AdminPresentationLayer\obj\Debug\AdminPre.C097EA6D.Up2Date

@@ -19,7 +19,7 @@ namespace DataLayer
             {
                 using (SqlConnection connection = new SqlConnection(Connection.cn))
                 {
-                    string query = "select IdProducto, Nombre, Descripcion, precio, stock, RutaImagen, NombreImagen, Activo from PRODUCTO";
+                    string query = "select IdProducto, Nombre, Descripcion, precio, stock, RutaImagen, NombreImagen, Activo, Estado from PRODUCTO";
 
                     SqlCommand cmd = new SqlCommand(query, connection)
                     {
@@ -42,7 +42,9 @@ namespace DataLayer
                                   stock = Convert.ToInt32(dr["stock"]),
                                   RutaImagen = dr["RutaImagen"].ToString(),
                                   NombreImagen = dr["NombreImagen"].ToString(),
-                                  Activo = Convert.ToBoolean(dr["Activo"])
+                                  Activo = Convert.ToBoolean(dr["Activo"]),
+                                  Estado = Convert.ToBoolean(dr["Estado"])
+
                               }
 
                             );
