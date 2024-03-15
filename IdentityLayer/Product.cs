@@ -29,5 +29,7 @@ namespace IdentityLayer
 
 		public bool Activo { get; set; }
 
-	}
+        public bool Estado { get; set; }
+
+    }
 }

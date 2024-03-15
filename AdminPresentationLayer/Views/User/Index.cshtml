@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a href="index.html">Summary</a></li>
+    <li class="breadcrumb-item active">Users</li>
+</ol>
+
+<div class="card">
+    <div class="card-header">
+        <i class="fas fa-users me-1"></i>List of Users
+    </div>
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" onclick="openModal()">Create New</button>
+            </div>
+        </div>
+        <hr />
+
+        <table id="User_Table" class="display cell-border" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Correo</th>
+                    <th>Activo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             
+                <div class="row">
+
+                    <div class="mb-3">
+                        <label for="txtname" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="txtname" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="textlastname" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="textlastname" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="textemail" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="textemail" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cboactive" class="form-label">Activo</label>
+                        <select id="cboactive"class="form-select" aria-label="Default select example">
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
+   
+                        </select>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button id="btnclose" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button id="save" type="button" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+
+        var dataTable;
+
+        jQuery.ajax({
+            url: '@Url.Action("ListUsers", "User")',
+            type: "GET",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                   console.log(data)
+            }
+        })
+
+        dataTable = $("#User_Table").DataTable({
+            responsive: true,
+            ordering: false,
+            "ajax": {
+                url: '@Url.Action("ListUsers", "User")',
+                type: "GET",
+                dataType: "json"
+            },
+            "columns": [
+                { "data": "Nombres" },
+                { "data": "Apellidos" },
+                { "data": "Correo" },
+                {
+                    "data": "Activo", "render": function (value) {
+                        var res = '<span class="badge bg-danger">No</span>';
+                        if (value) {
+                            res = '<span class="badge bg-success">Si</span>';
+                        }
+                        return res;
+                    }
+                },
+                {
+                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm"><i class="fas fa-pen"></i></button>' +
+                        '<button type="button" class="btn btn-danger btn-sm ms-2"><i class="fas fa-trash"></i></button>',
+                    "orderable": false,
+                    "searchable": false,
+                     "width": "90px"
+                }
+            ],
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/2.0.1/i18n/es-ES.json"
+            }
+        });
+
+        function openModal() {
+            $("#formModal").modal("show");
+        }
+
+    </script>
+
+}
+
+

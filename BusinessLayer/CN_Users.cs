@@ -13,5 +13,10 @@ namespace BusinessLayer
         {
             return objDataLayer.List();
         }
+
+        public static implicit operator List<object>(CN_Users v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
