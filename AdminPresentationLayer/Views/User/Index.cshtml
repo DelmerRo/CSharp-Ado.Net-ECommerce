@@ -17,7 +17,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-12">
-                <button type="button" class="btn btn-success" onclick="openModal()">Create New</button>
+                <button type="button" class="btn btn-success" onclick="openModal(null)">Create New</button>
             </div>
         </div>
         <hr />
@@ -57,13 +57,13 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="textlastname" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="textlastname" placeholder="name@example.com">
+                        <label for="txtlastname" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="txtlastname" placeholder="name@example.com">
                     </div>
 
                     <div class="mb-3">
-                        <label for="textemail" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="textemail" placeholder="name@example.com">
+                        <label for="txtemail" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="txtemail" placeholder="name@example.com">
                     </div>
 
                     <div class="mb-3">
@@ -125,7 +125,7 @@
                     }
                 },
                 {
-                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm"><i class="fas fa-pen"></i></button>' +
+                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fas fa-pen"></i></button>' +
                         '<button type="button" class="btn btn-danger btn-sm ms-2"><i class="fas fa-trash"></i></button>',
                     "orderable": false,
                     "searchable": false,
@@ -137,9 +137,25 @@
             }
         });
 
-        function openModal() {
+        function openModal(json) {
+            if (json != null) {
+                console.log(json.Apellidos)
+                console.log(json.Correo)
+                $("#txtname").val(json.Nombres);
+                $("#txtlastname").val(json.Apellidos);
+                $("#txtemail").val(json.Correo);
+                $("#cboactive").val(json.Activo == true ? 1:0);
+            }
+
             $("#formModal").modal("show");
         }
+
+        $("#User_Table tbody").on("click", '.btn-edit', function () {
+            var selectedRow = $(this).closest("tr");
+            var data = dataTable.row(selectedRow).data();
+            console.log()
+            openModal(data)  
+        })
 
     </script>
 
